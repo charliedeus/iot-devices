@@ -7,11 +7,12 @@
     "axios": "^0.25.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "ts-node": "^10.4.0"
   },
   "scripts": {
     "dev": "ts-node-dev --transpile-only --exit-child --ignore-watch node_modules --respawn src/server.ts",
-    "start": "node src/server.ts"
+    "start": "node --loader ts-node/esm src/server.ts"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
