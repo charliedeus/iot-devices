@@ -24,17 +24,17 @@ class CollectDataDeviceController {
 
     try {
       const result = await collectDataDeviseUseCase.execute(
-        ack,
-        duplicate,
-        device,
-        data,
-        rssi,
-        op,
-        seqNumber,
-        solar,
-        modem,
-        http,
-        fw,
+        ack as string,
+        duplicate as string,
+        device as string,
+        data as string,
+        rssi as string,
+        op as string,
+        seqNumber as string,
+        solar as string,
+        modem as string,
+        http as string,
+        fw as string,
       );
 
       return response.json(result);

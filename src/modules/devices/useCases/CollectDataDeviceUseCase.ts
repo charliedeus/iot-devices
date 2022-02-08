@@ -1,30 +1,30 @@
 interface IDeviceProps {
-  ack: boolean;
-  duplicate: boolean;
+  ack: string;
+  duplicate: string;
   device: string;
   data: string;
-  rssi: number;
+  rssi: string;
   op: string;
-  seqNumber: number;
-  solar: number;
-  modem: number;
-  http: number;
-  fw: number;
+  seqNumber: string;
+  solar: string;
+  modem: string;
+  http: string;
+  fw: string;
 }
 
 class CollectDataDeviceUseCase {
   async execute(
-    ack: boolean,
-    duplicate: boolean,
+    ack: string,
+    duplicate: string,
     device: string,
     data: string,
-    rssi: number,
+    rssi: string,
     op: string,
-    seqNumber: number,
-    solar: number,
-    modem: number,
-    http: number,
-    fw: number,
+    seqNumber: string,
+    solar: string,
+    modem: string,
+    http: string,
+    fw: string,
   ): Promise<IDeviceProps> {
     const dataDevice = {
       ack,

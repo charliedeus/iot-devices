@@ -16,7 +16,7 @@ const options: cors.CorsOptions = {
 app.use(cors(options));
 
 app.get('/', (request, response) => {
-  return response.json({ message: true });
+  return response.json({ message: 'Olá, essa é a rota principal' });
 });
 
 app.use(
